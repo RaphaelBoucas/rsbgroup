@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>RSB Group</title>
+</head>
+<body>
+<!-- Inicio da Navbar -->
+<!-- Utilizamos o 'sticky-top' para fixar a barra de navegação ao topo. -->
+<!-- A propriedade "navbar-expand-lg" indica que o elemento navbar que está colapsado, se expandirá quando o breakpoint lg ocorrer. -->
+    <header class="navbar navbar-expand-lg sticky-top pt-2" id="cabecalho">
+        <div class="container">
+            <h1 class="section-title navbar-brand m-0">RSB Group</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex ">
+                    <li class="nav-item fw-bold">
+                        <a href="#our-company" class="nav-link">
+                            <i class="bi bi bi-building"></i>
+                            Our company</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#our-services" class="nav-link">
+                            <i class="bi bi-briefcase"></i>
+                            Our services</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#our-fleet" class="nav-link">
+                            <i class="bi bi-water"></i>
+                            Our fleet</a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contact-us" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Contact us</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Fim da navbar -->
+
+    <!-- Inicio da section "Sobre o restaurante", contendo carousel e container com foto e descrição do restaurante. -->
+
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="our-company">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img class= "w-100" src="./images/slides/slide1.jpg" alt=".">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class= "w-100" src="./images/slides/slide2.jpg" alt=".">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img class= "w-100"src="./images/slides/slide3.jpg" alt=".">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <!-- Fim do carousel -->
+            
+            <!-- Inicio do container descritivo.  -->
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./images/aboutus.jpg" class="d-block w-100 rounded" alt="">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">About <span class="text-colored">us</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit vero sapiente quos neque aperiam perspiciatis amet quo quia unde, omnis numquam aspernatur laboriosam molestias quidem. Illum facere impedit officia repellendus!</p>
+                            <h3 class="section-title">Nº1 <span class="text-colored">Offshore company</span></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cum incidunt impedit animi sint ex delectus voluptatem dolor. Debitis id deserunt temporibus velit quae saepe in nemo ab sequi perferendis?</p>
+                            <ul>
+                                <li>Item 1</li>
+                                <li>Item 2</li>
+                                <li>Item 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fim da section "Sobre o restaurante". -->
+
+        <!-- Inicio da section "our-services". -->
+        <section id="our-services" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Our <span class="text-colored">Services</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="./images/services/prospection.webp" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            Prospection
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sint sit, adipisci delectus atque molestiae placeat corrupti earum quidem consequuntur maiores recusandae, tenetur dolorum porro aspernatur magnam totam, quam iste!
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images//services/drilling.webp" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            Drilling
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sint sit, adipisci delectus atque molestiae placeat corrupti earum quidem consequuntur maiores recusandae, tenetur dolorum porro aspernatur magnam totam, quam iste!
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./images/services/geoservices.webp" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            Geoservices
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt sint sit, adipisci delectus atque molestiae placeat corrupti earum quidem consequuntur maiores recusandae, tenetur dolorum porro aspernatur magnam totam, quam iste!
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Fim da section "our-services" -->
+        <!-- Inicio da section "our-fleet" -->
+        <section id="our-fleet" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Our <span class="text-colored">fleet</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-our-fleet">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#vessels"  class="fw-bold text-start nav-link text-colored active">Vessels</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#rigs"  class="fw-bold text-start nav-link text-colored">Rigs</button>
+                        </nav>
+                    </aside>
+                
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="vessels">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./images/fleet/AHTS-Vessels.jpg" alt="" class="d-block w-100">
+                                        <h5 class="text-colored fw-bold mt-2">Deepwater construction vessel (DCV)</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, alias deserunt. Dolores recusandae quasi illo numquam laboriosam similique odit alias obcaecati porro magni. Minus quas, inventore odio corporis deserunt eum.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./images/fleet/dsv-vessel.jpg" alt="" class="d-block w-100">
+                                        <h5 class="text-colored fw-bold mt-2">Diving Support Vessel (DSV)</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, alias deserunt. Dolores recusandae quasi illo numquam laboriosam similique odit alias obcaecati porro magni. Minus quas, inventore odio corporis deserunt eum.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="rigs">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./images/fleet/jackup-rig-01.jpg" alt="" class="d-block w-100">
+                                        <h5 class="text-colored fw-bold mt-2">Jackup rig</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, alias deserunt. Dolores recusandae quasi illo numquam laboriosam similique odit alias obcaecati porro magni. Minus quas, inventore odio corporis deserunt eum.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./images/fleet/Submersible-Rigs.jpg" alt="" class="d-block w-100">
+                                        <h5 class="text-colored fw-bold mt-2">Submersible rig</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, alias deserunt. Dolores recusandae quasi illo numquam laboriosam similique odit alias obcaecati porro magni. Minus quas, inventore odio corporis deserunt eum.
+                                        </p>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        <!-- Fim da section "our-fleet" -->
+        <!-- Inicio da section "Fale conosco" -->
+        <section id="contact-us" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Contact <span class="text-colored">us</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Name</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">E-mail</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Phone</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored" >Message</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                                <button type="submit" class="btn fw-bold">Send</button>
+
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Follow us
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-4">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-4 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-4">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored mt-4">
+                                <i class="bi bi-cursor-fill"></i>
+                                Address
+                            </h3>
+                            <p>Rua Teste Exemplo nº 145, Bairro Bootstrap - São Paulo - SP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
